@@ -28,11 +28,13 @@ function subscriEvents(){
             });
             $menuPanel.hide();
             $slidePanel.show();
+            $('.head-shadow').addClass('actived');
         }else{
             $menuPanel.show();
             $slidePanel.hide();
             $('.menu-panel-list').hide();
             $('#'+dataId,$menuPanel).show();
+            $('.head-shadow').removeClass('actived');
         }
     });
 
@@ -46,7 +48,6 @@ function subscriEvents(){
 
     //初始化段内的幻灯牌
     Events.subscribe('init-slide-ppt',function(){
-        debugger;
         $("#fullSlide",$container).slide({
             mainCell: ".bd ul",
             autoPlay: true,
@@ -80,10 +81,10 @@ function bindEvents(){
     //菜单面板点击事件
     $('#menuPanel').on('click','.menu-panel-list>li',function(){
         var $this = $(this);
-        if($this.hasClass('more'))
+        if($this.hasClass('more')||$this.hasClass('more-two'))
             return;
-        $('.more li').removeClass('actived');
-        if($this.next().hasClass('more')){
+        $('.more li,.more-two li').removeClass('actived');
+        if($this.next().hasClass('more') || $this.next().hasClass('more-two')){
             $this.next().find('ul>li').removeClass('actived').eq(0).addClass('actived');
         }
         $this.parent().children().removeClass('actived');
@@ -108,6 +109,28 @@ function bindEvents(){
         var $this = $(this);
         $this.parent().parent().prev().addClass('actived');
     }).on('mouseout','.more>ul li',function(){
+        var $this = $(this);
+        var hasActived = false;
+        $this.parent().find('li').each(function(){
+            if($(this).hasClass('actived')){
+                hasActived = true;
+                return false;
+            }
+        });
+        !hasActived && ($this.parent().parent().prev().removeClass('actived'));
+    }).on('click','.more-two>ul li',function(){
+        var $this = $(this);
+        $('li',$this.parent().parent().parent()).removeClass('actived');
+        $this.parent().parent().prev().addClass('actived');
+        $this.addClass('actived');
+        var module = $this.attr('data-module');
+        Events.notify('fetch-fragment',module,function(data){
+            Events.notify('render-container',data);
+        });
+    }).on('mouseenter','.more-two>ul li',function(){
+        var $this = $(this);
+        $this.parent().parent().prev().addClass('actived');
+    }).on('mouseout','.more-two>ul li',function(){
         var $this = $(this);
         var hasActived = false;
         $this.parent().find('li').each(function(){

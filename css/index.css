@@ -163,13 +163,14 @@ body{
 .menu-panel .menu-panel-list>li:hover,.menu-panel .menu-panel-list>li.actived{
     color:#FFFFCF;
 }
+/*=============more 三条记录===============*/
 .menu-panel .menu-panel-list>li.more{
     width:147px;
     margin-left:0px;
 }
 .menu-panel .menu-panel-list>li:hover+li.more li:first-child{
     color:#FFFFCF;
-    background-image: url(../images/sub1_hover.png);
+    background-image: url(../images/more_sub1_hover.png);
 }
 .menu-panel .menu-panel-list>li.more>ul {
     list-style: none;
@@ -187,27 +188,68 @@ body{
 .menu-panel .menu-panel-list>li.more>ul>li:first-child {
     height:34px;
     width:147px;
-    background-image: url(../images/sub1.png);
+    background-image: url(../images/more_sub1.png);
 }
 .menu-panel .menu-panel-list>li.more>ul>li:first-child:hover,.menu-panel .menu-panel-list>li.more>ul>li:first-child.actived {
-    background-image: url(../images/sub1_hover.png);
+    background-image: url(../images/more_sub1_hover.png);
 }
 .menu-panel .menu-panel-list>li.more>ul>li:first-child+li {
     height:36px;
     width:147px;
-    background-image: url(../images/sub2.png);
+    background-image: url(../images/more_sub2.png);
 }
 .menu-panel .menu-panel-list>li.more>ul>li:first-child+li:hover,.menu-panel .menu-panel-list>li.more>ul>li:first-child+li.actived {
-    background-image: url(../images/sub2_hover.png);
+    background-image: url(../images/more_sub2_hover.png);
 }
-.menu-panel .menu-panel-list>li>ul>li:first-child+li+li {
+.menu-panel .menu-panel-list>li.more>ul>li:first-child+li+li {
     height:34px;
     width:147px;
-    background-image: url(../images/sub3.png);
+    background-image: url(../images/more_sub3.png);
 }
 .menu-panel .menu-panel-list>li.more>ul>li:first-child+li+li:hover,.menu-panel .menu-panel-list>li.more>ul>li:first-child+li+li.actived {
-    background-image: url(../images/sub3_hover.png);
+    background-image: url(../images/more_sub3_hover.png);
 }
+
+/*=============more-two 两条记录===============*/
+.menu-panel .menu-panel-list>li.more-two{
+    width:147px;
+    margin-left:-15px !important;
+}
+.menu-panel .menu-panel-list>li:hover+li.more-two li:first-child{
+    color:#FFFFCF;
+    background-image: url(../images/more_two_sub1_hover.png);
+}
+.menu-panel .menu-panel-list>li.more-two>ul {
+    list-style: none;
+    top:0;
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li {
+    line-height: 3;
+    text-align: center;
+    font-weight: 500;
+    color:#4F95CC;
+    background-repeat: no-repeat;
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li:hover,.menu-panel .menu-panel-list>li.more-two>ul>li.actived {
+    color:#FFFFCF;
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li:first-child {
+    height:52px;
+    width:122px;
+    background-image: url(../images/more_two_sub1.png);
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li:first-child:hover,.menu-panel .menu-panel-list>li.more-two>ul>li:first-child.actived {
+    background-image: url(../images/more_two_sub1_hover.png);
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li:first-child+li {
+    height:51px;
+    width:122px;
+    background-image: url(../images/more_two_sub2.png);
+}
+.menu-panel .menu-panel-list>li.more-two>ul>li:first-child+li:hover,.menu-panel .menu-panel-list>li.more-two>ul>li:first-child+li.actived {
+    background-image: url(../images/more_two_sub2_hover.png);
+}
+
 
 
 
@@ -366,9 +408,37 @@ body{
 .menu-panel .menu-panel-list#serviceGuide>li:first-child+li+li+li+li+li+li:hover,.menu-panel .menu-panel-list#serviceGuide>li:first-child+li+li+li+li+li+li.actived {
     background-image: url(../images/service-guide/2G.png);
 }
-.menu-panel .menu-panel-list#serviceGuide>li:first-child+li+li+li+li+li+li:hover>ul>li:first-child,.menu-panel .menu-panel-list#serviceGuide>li:first-child+li+li+li+li+li+li.actived:first-child {
-    color:#FFFFCF;
-    background-image: url(../images/sub1_hover.png);
+
+
+/*=======================市场诚信==========================*/
+.menu-panel .menu-panel-list#marketHonesty>li{
+    margin:0 20px;
+    width:137px;
+    height:104px;
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child{
+    background-image: url(../images/market-honesty/1A.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child:hover,.menu-panel .menu-panel-list#marketHonesty>li:first-child.actived {
+    background-image: url(../images/market-honesty/2A.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li{
+    background-image: url(../images/market-honesty/1B.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li:hover,.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li.actived {
+    background-image: url(../images/market-honesty/2B.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li{
+    background-image: url(../images/market-honesty/1C.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li:hover,.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li.actived {
+    background-image: url(../images/market-honesty/2C.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li+li{
+    background-image: url(../images/market-honesty/1D.png);
+}
+.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li+li:hover,.menu-panel .menu-panel-list#marketHonesty>li:first-child+li+li+li+li.actived {
+    background-image: url(../images/market-honesty/2D.png);
 }
 
 
@@ -392,7 +462,7 @@ body{
 .head-navi>li{
     height:79px;
     background-repeat: no-repeat;
-    width:16.6676%;
+    width:166.3333333px;
     display: inline-block;
     background-size: 100% 100%;
     vertical-align: top;
