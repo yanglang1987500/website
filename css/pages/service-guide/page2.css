@@ -1,0 +1,16 @@
+.service-guide-page2 {
+    padding-top:45px;background-color:#dde6eb;
+}
+.service-guide-page2 .artical-wrap {
+    background: #fff
+}
+.service-guide-page2 .head{
+    height:65px;
+    line-height:65px;
+    background-image: url(../../../images/service-guide/head_bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    color:#fff;
+    font-size: 22px;
+    font-weight: 500;
+}

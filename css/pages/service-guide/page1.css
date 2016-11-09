@@ -1,0 +1,37 @@
+.service-guide-page1 {
+    padding-top:45px;background-color:#dde6eb;
+}
+.service-guide-page1 .artical-wrap {
+    padding:20px 10% 50px;
+    background: #fff
+}
+.service-guide-page1 .artical {
+    padding:20px 5%;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+}
+
+.service-guide-page1 h1 {
+    font-size:30px;
+    text-align:center;
+    line-height:110px;
+    color:#33454F;
+
+}
+.service-guide-page1 h3 {
+    line-height:50px;
+    font-size: 16px;
+    color:#33454F;
+}
+.service-guide-page1 h4 {
+    line-height:40px;
+    font-size: 16px;
+    color:#33454F;
+}
+.service-guide-page1 p {
+    font-size:16px;
+    line-height: 2;
+    color:#44545D;
+}
+.mb40{
+    margin-bottom: 40px;
+}
