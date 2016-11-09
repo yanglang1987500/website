@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel='stylesheet' href='./css/reset.css'/>
+    <link rel='stylesheet' href='./css/layout.css'/>
+    <link rel='stylesheet' href='./css/index.css'/>
+</head>
+<body>
+    <div class="lt-head">
+        <div class="lt-head-inner">
+            <div class="lt-wrap">
+                <div class="head-wrap">
+                    <img class="logo" src="./images/logo.png">
+                    <div class="head-info">
+                        <p>17&deg;C-20&deg;C 2016年11月03日 星期四</p>
+                        <div class="search-bar">
+                            <input type="text" id="search-text"/>
+                            <ul class="tip">
+                                <li>我是第一条提示</li>
+                                <li>我是第二条提示</li>
+                                <li>我是第三条提示</li>
+                                <li>我是第四条提示</li>
+                            </ul>
+                            <span class="search-bar-btn"></span>
+                        </div>
+                    </div>
+                    <div class="head-shadow"></div>
+                </div>
+                <div class="slide-wrap">
+                    <div class="menu-panel" id="menuPanel">
+                        <!--信息公开-->
+                        <ul class="menu-panel-list" id="infoPublic">
+                            <li data-module="./pages/info-public/page1.html">机构概况</li>
+                            <li data-module="./pages/info-public/page2.html">人事信息</li>
+                            <li>财务信息</li>
+                            <li>规划信息</li>
+                            <li>公开年报</li>
+                            <li>统计数据</li>
+                            <li>党务公开</li>
+                        </ul>
+                        <!--资讯中心-->
+                        <ul class="menu-panel-list" id="msgCenter">
+                            <li>工作动态</li>
+                            <li>时事要闻</li>
+                            <li>通知公告</li>
+                        </ul>
+                        <!--交易信息-->
+                        <ul class="menu-panel-list" id="tradeInfo">
+                            <li>房建市政</li>
+                            <li>交通工程</li>
+                            <li>水利工程</li>
+                            <li>政府采购</li>
+                            <li>医疗采购</li>
+                            <li>土地交易</li>
+                            <li>产权交易</li>
+                        </ul>
+                        <!--服务指南-->
+                        <ul class="menu-panel-list" id="serviceGuide">
+                            <li>办事指南</li>
+                            <li>政策法规</li>
+                            <li>服务热线</li>
+                            <li>下载专区</li>
+                            <li>操作指南</li>
+                            <li>监督投诉</li>
+                            <li>场地安排</li>
+                            <li class="more">
+                                <ul>
+                                    <li data-module="./pages/service-guide/page1.html">业务流程介绍</li>
+                                    <li>开标室安排信息</li>
+                                    <li>评标室安排信息</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide-content" id="slidePanel"></div>
+                </div>
+                <ul class="head-navi">
+                    <li data-id="home">首页</li>
+                    <li data-id="infoPublic">信息公开</li>
+                    <li data-id="msgCenter">资讯中心</li>
+                    <li data-id="tradeInfo">交易信息</li>
+                    <li data-id="serviceGuide">服务指南</li>
+                    <li>市场诚信</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="lt-body">
+        <div class="lt-headtmp"></div>
+        <div class="lt-main-container">
+            <div class="lt-wrap">
+                <div id="mainContainer">
+
+                </div>
+            </div>
+        </div>
+        <div class="lt-foottmp"></div>
+    </div>
+    <div class="lt-foot">
+        <div class="lt-foot-wrap">
+            <img class="logo" src="./images/foot_logo.png">
+            <img class="logo" src="./images/blue_error.png">
+            <div class="foot-info">
+                <p>主办单位：长沙市发展改革委员会长沙公共资源交易中心</p>
+                <p>备案序号：湘ICP备09003888号</p>
+                <p>视觉设计：长沙谜宇电子商务有限公司</p>
+                <p>技术支持：北京金润方舟科技股份有限公司</p>
+            </div>
+        </div>
+    </div>
+    <!--[if lte IE 8]>
+    <script src="./lib/ieBetter.js"></script>
+    <![endif]-->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/superslide.js"></script>
+    <script src="./lib/framework-events.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
