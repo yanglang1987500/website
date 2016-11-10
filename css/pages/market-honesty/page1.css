@@ -1,0 +1,46 @@
+.market-honesty-page1 {
+    padding-top:45px;background-color:#dde6eb;
+}
+.market-honesty-page1 .artical-wrap {
+    background: #fff
+}
+.market-honesty-page1 .head{
+    height:61px;
+    line-height:61px;
+    background-image: url(../../../images/market-honesty/head_bg1.png);
+    background-repeat: repeat-x;
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.market-honesty-page1 .head .left-title{
+    width:195px;
+    float:left;
+}
+.market-honesty-page1 .head .right-index{
+    width:80px;
+    float:left;
+}
+.market-honesty-page1 .head .right-title {
+    width:210px;
+    float:left;
+    text-align: left;
+}
+.market-honesty-page1 .head .search-bar2 {
+    float:left;
+    margin-top:16px;
+    font-weight: 500;
+    margin-left:30px;
+}
+.market-honesty-page1 .head .search-bar2:first-child+.search-bar2 {
+    float:right;
+    margin-right:30px;
+}
+.market-honesty-page1 .head .publish-time {
+    width:130px;
+    float:right;
+}

@@ -158,6 +158,21 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 
 
+/*================================搜索条样式4================================*/
+.search-bar4{height:31px;width:435px;position: relative;background-image:url(../images/search_bar3.png)}
+.search-bar4>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar4>input:focus+ul{display:block}
+.search-bar4-btn{display:block;width:41px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
+.search-bar4-btn:hover{background-image: url(../images/search_bar3_btn_hover.png);background-repeat:no-repeat}
+.search-bar4>.tip{color:#788a94;position:absolute;display:none;top:32px;left:5px;width:365px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar4>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
+.search-bar4>.tip>li:hover{background:#184DA1;color:#fff}
+
+
+
+
+
+
 /*================================面包屑样式================================*/
 .breadcrumbs{position:relative;overflow:hidden;margin:10px 20px;padding-left:100px;color:#004689;list-style:none;}
 .breadcrumbs.white-theme{color:#fff;}
@@ -169,6 +184,23 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .breadcrumbs:before{position:absolute;top:0;left:0;height:30px;content:'当前位置：';font-weight:600;font-size:18px;line-height:30px;}
 .breadcrumbs>li.breadcrumbs-item-last,.breadcrumbs>li:last-child{background-image:none;}
 
+
+
+/*================================左侧选择栏================================*/
+.left-bar ul{margin:15px 0;color:#fff;list-style:none;text-align:center;font-weight:600;font-size:15px}
+.left-bar ul li{position:relative;margin:10px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer}
+.left-bar ul li:hover,.trade-info-page2 .left-bar ul li.actived{background:#F90}
+.left-bar ul li:hover:after,.trade-info-page2 .left-bar ul li.actived:after{position:absolute;top:0;right:-15px;width:15px;height:30px;background-image:url(../images/left-arrow.png);background-repeat:no-repeat;content:''}
+
+
+
+/*================================右侧数据（类似目录-----效果的列表 使用ul列表模拟表格）================================*/
+.index-list{color:#00478A;list-style:none;font-weight:500;font-size:16px;}
+.index-list li{height:40px;text-align:center;line-height:40px;}
+.index-list li .index-list-index{float:left;width:75px;}
+.index-list li .index-list-content{float:left;width:595px;background-image:url(../images/index_list_dot.jpg);background-position:center center;background-repeat:repeat-x;text-align:left;}
+.index-list li .index-list-content p{float:left;overflow:hidden;padding-right:5px;height:40px;max-width:595px;background:#fff;}
+.index-list li .index-list-date{float:right;width:125px;}
 
 
 
