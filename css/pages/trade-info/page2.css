@@ -1,0 +1,38 @@
+.trade-info-page2 {
+    padding-top:45px;background-color:#dde6eb;
+}
+.trade-info-page2 .artical-wrap {
+    background: #fff
+}
+.trade-info-page2 .head{
+    height:41px;
+    line-height:41px;
+    background-image: url(../../../images/trade-info/head_bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.trade-info-page2 .head .left-title{
+    width:195px;
+    float:left;
+}
+.trade-info-page2 .head .right-index{
+    width:80px;
+    float:left;
+}
+.trade-info-page2 .head .right-title {
+    width:210px;
+    float:left;
+    text-align: left;
+}
+.trade-info-page2 .head .search-bar3 {
+    float:left;
+    margin-top:5px;
+}
+.trade-info-page2 .head .publish-time {
+    width:160px;
+    float:right;
+}

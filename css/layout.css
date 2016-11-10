@@ -129,21 +129,32 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .search-bar>input:focus+ul{display:block}
 .search-bar-btn{display:block;width:48px;height:30px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar-btn:hover{background-image: url(../images/head_search_bar_btn_hover.png);background-repeat:no-repeat}
-.search-bar>.tip{position:absolute;display:none;top:32px;left:5px;width:285px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar>.tip{color:#788a94;position:absolute;display:none;top:32px;left:5px;width:285px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
 .search-bar>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
 .search-bar>.tip>li:hover{background:#184DA1;color:#fff}
 
 
 /*================================搜索条样式2================================*/
 .search-bar2{height:31px;width:434px;position: relative;background-image:url(../images/search_bar.png)}
-.search-bar2>input{color: #6b98ba;font-size:16px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar2>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
 .search-bar2>input:focus+ul{display:block}
 .search-bar2-btn{display:block;width:50px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar2-btn:hover{background-image: url(../images/search_bar_btn_hover.png);background-repeat:no-repeat}
-.search-bar2>.tip{position:absolute;display:none;top:32px;left:5px;width:381px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar2>.tip{color:#788a94;position:absolute;display:none;top:32px;left:5px;width:381px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
 .search-bar2>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
 .search-bar2>.tip>li:hover{background:#184DA1;color:#fff}
 
+
+
+/*================================搜索条样式2================================*/
+.search-bar3{height:31px;width:316px;position: relative;background-image:url(../images/search_bar2.png)}
+.search-bar3>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar3>input:focus+ul{display:block}
+.search-bar3-btn{display:block;width:48px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
+.search-bar3-btn:hover{background-image: url(../images/search_bar2_btn_hover.png);background-repeat:no-repeat}
+.search-bar3>.tip{color:#788a94;position:absolute;display:none;top:32px;left:5px;width:265px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar3>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
+.search-bar3>.tip>li:hover{background:#184DA1;color:#fff}
 
 
 
