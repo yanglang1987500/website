@@ -203,4 +203,13 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .index-list li .index-list-date{float:right;width:125px;}
 
 
+/*================================table样式================================*/
+.table-contents table{position:relative;top:-90px;margin-left:265px;width:700px}
+th{background-color:#0154A4;padding:10px;color:#fff;font-size:18px;text-align:left;font-weight:400}
+td{padding:13px;font-size:15px;background-color:#CCECFF}
 
+/*================================分页导航条样式================================*/
+.page-navigator{margin-left:140px;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:40px}
+.page-navigator span{margin-right:40px}
+.page-navigator span a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
+.page-navigator ul li a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
