@@ -70,6 +70,8 @@ html,body{
 .mb5{margin-bottom:5px}
 .mb20{margin-bottom:20px}
 .mb30{margin-bottom:30px}
+.mb40{margin-bottom:40px}
+.mb50{margin-bottom:50px}
 .mr15{margin-right:15px}
 .mr10{margin-right:10px}
 .mr5{margin-right:5px}
@@ -84,7 +86,8 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .clearfix:after{content:'';display:block;clear:both}
 .lr-layout-l{float:left;width:290px}
 .lr-layout-r{overflow:hidden;margin-left:310px}
-
+.lt-half-l{float:left;width:50%}
+.lt-half-r{float:right;width:50%}
 
 
 

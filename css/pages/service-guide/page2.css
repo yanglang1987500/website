@@ -8,7 +8,7 @@
     height:65px;
     line-height:65px;
     background-image: url(../../../images/service-guide/head_bg.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     text-align: center;
     color:#fff;
     font-size: 22px;
@@ -22,8 +22,9 @@
 }
 .service-guide-page2 .room-wrap{
     list-style: none;
-    text-align: justify;
+    text-align: left;
     padding:40px 40px;
+    font-size:0;
 }
 .service-guide-page2 .room-wrap:after{
     content:'';

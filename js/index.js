@@ -10,9 +10,7 @@ $(function(){
     bindEvents();
     $container = $('#mainContainer');
 
-    Events.notify('fetch-fragment',homePage,function(data){
-        Events.notify('render-container',data);
-    });
+    Events.notify('menu-panel-toggle','home');
 });
 
 /**
@@ -28,11 +26,13 @@ function subscriEvents(){
             });
             $menuPanel.hide();
             $slidePanel.show();
+            $('.home-footer').show();
             $('.head-shadow').addClass('actived');
         }else{
             $menuPanel.show();
             $slidePanel.hide();
             $('.menu-panel-list').hide();
+            $('.home-footer').hide();
             $('#'+dataId,$menuPanel).show();
             $('.head-shadow').removeClass('actived');
         }
