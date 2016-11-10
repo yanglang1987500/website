@@ -7,27 +7,8 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
 .head-wrap img.logo{vertical-align:middle}
 .head-wrap .head-info{float:right;line-height:40px;font-size:16px;height:86px;width:400px;text-align:right;padding-right:20px;position:relative}
 
-/*================================搜索条样式================================*/
+/*================================首页搜索条样式================================*/
 .home-top-bar{position:absolute;right:20px;}
-.search-bar{height:30px;width:338px;background-image:url(../images/head_search_bar.png)}
-.search-bar>input{height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:275px}
-.search-bar>input:focus+ul{display:block}
-.search-bar-btn{display:block;width:48px;height:30px;position:absolute;right:0;top:0;cursor:pointer}
-.search-bar-btn:hover{background-image: url(../images/head_search_bar_btn_hover.png);background-repeat:no-repeat}
-.search-bar>.tip{position:absolute;display:none;top:32px;left:5px;width:285px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
-.search-bar>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
-.search-bar>.tip>li:hover{background:#184DA1;color:#fff}
-
-
-/*================================搜索条样式2================================*/
-.search-bar2{height:31px;width:434px;position: relative;background-image:url(../images/search_bar.png)}
-.search-bar2>input{height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
-.search-bar2>input:focus+ul{display:block}
-.search-bar2-btn{display:block;width:50px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
-.search-bar2-btn:hover{background-image: url(../images/search_bar_btn_hover.png);background-repeat:no-repeat}
-.search-bar2>.tip{position:absolute;display:none;top:32px;left:5px;width:381px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
-.search-bar2>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
-.search-bar2>.tip>li:hover{background:#184DA1;color:#fff}
 
 
 .lt-content{position:relative}

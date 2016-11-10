@@ -123,6 +123,29 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .fullSlide .hd ul>li.on{background-color:#CDECFE}
 
 
+/*================================搜索条样式================================*/
+.search-bar{height:30px;width:338px;background-image:url(../images/head_search_bar.png)}
+.search-bar>input{color: #8c8c8c;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:275px}
+.search-bar>input:focus+ul{display:block}
+.search-bar-btn{display:block;width:48px;height:30px;position:absolute;right:0;top:0;cursor:pointer}
+.search-bar-btn:hover{background-image: url(../images/head_search_bar_btn_hover.png);background-repeat:no-repeat}
+.search-bar>.tip{position:absolute;display:none;top:32px;left:5px;width:285px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
+.search-bar>.tip>li:hover{background:#184DA1;color:#fff}
+
+
+/*================================搜索条样式2================================*/
+.search-bar2{height:31px;width:434px;position: relative;background-image:url(../images/search_bar.png)}
+.search-bar2>input{color: #6b98ba;font-size:16px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar2>input:focus+ul{display:block}
+.search-bar2-btn{display:block;width:50px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
+.search-bar2-btn:hover{background-image: url(../images/search_bar_btn_hover.png);background-repeat:no-repeat}
+.search-bar2>.tip{position:absolute;display:none;top:32px;left:5px;width:381px;height:200px;border:1px solid #eee;background:#fff;z-index:20;box-shadow:1px 1px 5px rgba(0,0,0,.5);list-style:none;text-align:left}
+.search-bar2>.tip>li{height:25px;line-height:25px;padding:0 10px;font-size:12px;border-bottom:1px dashed #ccc;cursor:pointer}
+.search-bar2>.tip>li:hover{background:#184DA1;color:#fff}
+
+
+
 
 .breadcrumbs{
     margin:10px 20px;
@@ -132,14 +155,33 @@ hr{border:0;border-bottom:1px solid #94D8FF}
     overflow: hidden;
     color:#004689;
 }
+.breadcrumbs.white-theme{
+    color:#fff;
+}
 .breadcrumbs a{
     color:#004689;
+    text-decoration: none;
+    cursor: pointer;
+}
+.breadcrumbs.white-theme a{
+    color:#fff;
+}
+.breadcrumbs a:hover{
+    text-decoration: underline;
 }
 .breadcrumbs>li{
     float:left;
     font-size: 18px;
     line-height: 30px;
     height:30px;
+    background-image: url(../images/breadcrumbs_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding:0 15px 0 5px;
+
+}
+.breadcrumbs.white-theme>li{
+    background-image: url(../images/breadcrumbs_arrow_white.png);
 }
 .breadcrumbs:before{
     position: absolute;
@@ -151,7 +193,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
     font-size:18px;
     font-weight: 600;
 }
-.breadcrumbs-item-last{
-
+.breadcrumbs>li.breadcrumbs-item-last,.breadcrumbs>li:last-child{
+    background-image: none;
 }
 

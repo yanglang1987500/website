@@ -30,7 +30,6 @@
     display: inline-block;
     height:0px;
 }
-
 .service-guide-page2 .room-wrap li{
     display: inline-block;
     width:90px;
@@ -44,8 +43,17 @@
     text-align: center;
     position: relative;
 }
+.service-guide-page2 .room-wrap.room-owner li{
+    width:148px;
+    height:160px;
+    margin:15px 15px;
+    background-image: url(../../../images/service-guide/room-icon3.png);
+}
 .service-guide-page2 .room-wrap li.unbook{
     background-image: url(../../../images/service-guide/room-icon2.png);
+}
+.service-guide-page2 .room-wrap.room-owner li.unbook{
+    background-image: url(../../../images/service-guide/room-icon4.png);
 }
 .service-guide-page2 .room-wrap li>p:first-child{
     position: absolute;
@@ -61,3 +69,12 @@
 .service-guide-page2 .room-wrap li.unbook>p:first-child+p{
     color:#0154A4;
 }
+
+.service-guide-page2 .desc{
+    padding:20px 40px 40px;
+    background: #E8F5FF;
+    color:#26649D;
+    font-size:16px;
+    line-height: 1.8;
+}
+
