@@ -205,8 +205,8 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================table样式================================*/
 .table-contents table{position:relative;top:-90px;margin-left:265px;width:700px}
-th{background-color:#0154A4;padding:10px;color:#fff;font-size:18px;text-align:left;font-weight:400}
-td{padding:13px;font-size:15px;background-color:#CCECFF}
+.table-contents th{background-color:#0154A4;padding:10px;color:#fff;font-size:18px;text-align:left;font-weight:400}
+.table-contents td{padding:13px;font-size:15px;background-color:#CCECFF}
 
 /*================================分页导航条样式================================*/
 .page-navigator{margin-left:140px;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:40px}
