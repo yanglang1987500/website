@@ -183,6 +183,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .breadcrumbs.white-theme>li{background-image:url(../images/breadcrumbs_arrow_white.png);}
 .breadcrumbs:before{position:absolute;top:0;left:0;height:30px;content:'当前位置：';font-weight:600;font-size:18px;line-height:30px;}
 .breadcrumbs>li.breadcrumbs-item-last,.breadcrumbs>li:last-child{background-image:none;}
+.breadcrumbs.white-theme>li.breadcrumbs-item-last,.breadcrumbs.white-theme>li:last-child{background-image:none;}
 
 
 
@@ -198,8 +199,8 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .index-list{color:#00478A;list-style:none;font-weight:500;font-size:16px;}
 .index-list li{height:40px;text-align:center;line-height:40px;}
 .index-list li .index-list-index{float:left;width:75px;}
-.index-list li .index-list-content{float:left;width:595px;background-image:url(../images/index_list_dot.jpg);background-position:center center;background-repeat:repeat-x;text-align:left;}
-.index-list li .index-list-content p{float:left;overflow:hidden;padding-right:5px;height:40px;max-width:595px;background:#fff;}
+.index-list li .index-list-content{float:left;width:74%;background-image:url(../images/index_list_dot.jpg);background-position:center center;background-repeat:repeat-x;text-align:left;}
+.index-list li .index-list-content p{float:left;overflow:hidden;padding-right:5px;height:40px;max-width:100%;background:#fff;}
 .index-list li .index-list-date{float:right;width:125px;}
 
 
