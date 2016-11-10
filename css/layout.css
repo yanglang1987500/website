@@ -146,7 +146,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 
 
-/*================================搜索条样式2================================*/
+/*================================搜索条样式3================================*/
 .search-bar3{height:31px;width:316px;position: relative;background-image:url(../images/search_bar2.png)}
 .search-bar3>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
 .search-bar3>input:focus+ul{display:block}
@@ -158,53 +158,13 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 
 
-.breadcrumbs{
-    margin:10px 20px;
-    position: relative;
-    padding-left:100px;
-    list-style: none;
-    overflow: hidden;
-    color:#004689;
-}
-.breadcrumbs.white-theme{
-    color:#fff;
-}
-.breadcrumbs a{
-    color:#004689;
-    text-decoration: none;
-    cursor: pointer;
-}
-.breadcrumbs.white-theme a{
-    color:#fff;
-}
-.breadcrumbs a:hover{
-    text-decoration: underline;
-}
-.breadcrumbs>li{
-    float:left;
-    font-size: 18px;
-    line-height: 30px;
-    height:30px;
-    background-image: url(../images/breadcrumbs_arrow.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding:0 15px 0 5px;
-
-}
-.breadcrumbs.white-theme>li{
-    background-image: url(../images/breadcrumbs_arrow_white.png);
-}
-.breadcrumbs:before{
-    position: absolute;
-    left:0;
-    top:0;
-    content:'当前位置：';
-    line-height: 30px;
-    height:30px;
-    font-size:18px;
-    font-weight: 600;
-}
-.breadcrumbs>li.breadcrumbs-item-last,.breadcrumbs>li:last-child{
-    background-image: none;
-}
-
+/*================================面包屑样式================================*/
+.breadcrumbs{position:relative;overflow:hidden;margin:10px 20px;padding-left:100px;color:#004689;list-style:none;}
+.breadcrumbs.white-theme{color:#fff;}
+.breadcrumbs a{color:#004689;text-decoration:none;cursor:pointer;}
+.breadcrumbs.white-theme a{color:#fff;}
+.breadcrumbs a:hover{text-decoration:underline;}
+.breadcrumbs>li{float:left;padding:0 15px 0 5px;height:30px;background-image:url(../images/breadcrumbs_arrow.png);background-position:right center;background-repeat:no-repeat;font-size:18px;line-height:30px;}
+.breadcrumbs.white-theme>li{background-image:url(../images/breadcrumbs_arrow_white.png);}
+.breadcrumbs:before{position:absolute;top:0;left:0;height:30px;content:'当前位置：';font-weight:600;font-size:18px;line-height:30px;}
+.breadcrumbs>li.breadcrumbs-item-last,.breadcrumbs>li:last-child{background-image:none;}
