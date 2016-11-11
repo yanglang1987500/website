@@ -17,7 +17,8 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
 .menu-panel{position:absolute;display:none;height:230px;width:100%;background-image:url(../images/menu_panel_bg.png);background-size:100% 100%}
 .menu-panel .menu-panel-list{list-style:none;font-size:0;text-align:center;padding-top:50px;cursor:pointer;display:none}
 .menu-panel .menu-panel-list>li{font-size:16px;display:inline-block;vertical-align:middle;margin:0 6px;height:104px;width:104px;background-repeat:no-repeat;background-size:100% 100%;line-height:165px;text-align:center;color:#4F95CC;font-weight:600;position:relative}
-.menu-panel .menu-panel-list>li.actived,.menu-panel .menu-panel-list>li:hover{color:#FFFFCF}
+.menu-panel .menu-panel-list>li.actived{color:#FFFFCF}
+.menu-panel .menu-panel-list>li:hover{color:#FFFFCF}
 
 /*=============more 三条记录===============*/
 .menu-panel .menu-panel-list>li.more{width:147px;margin-left:0}

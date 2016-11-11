@@ -195,7 +195,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 /*================================左侧选择栏================================*/
 .left-bar{font-size:16px;padding-top:40px;}
 .left-bar h3{font-size:16px;color:#fff;margin:8px 0;height:30px;background:#0154A4;text-align:center;line-height:30px;}
-.left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-size:15px}
+.left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-size:16px}
 .left-bar ul li{padding:0 20px;position:relative;margin:8px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer;}
 .left-bar ul li>p{display:block;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .left-bar ul li:hover,.trade-info-page2 .left-bar ul li.actived{background:#F90}
@@ -238,7 +238,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 /*================================page内table样式2================================*/
 .ui-table2 table{position:relative;width:100%;}
 .ui-table2 table th{background-color:#E7F0F5;height:55px;line-height:55px;border:1px solid #AEB9BE;color:#2D3B42;font-size:16px;text-align:center;font-weight:600}
-.ui-table2 table td{font-size:14px;background-color:#FFFFFF;line-height: 1.5;border:1px solid #AEB9BE;text-align: center;font-size:16px;vertical-align: middle;padding:0 10px;}
+.ui-table2 table td{font-size:15px;background-color:#FFFFFF;line-height: 1.5;border:1px solid #AEB9BE;text-align: center;vertical-align: middle;padding:0 10px;}
 
 
 /*================================公告样式================================*/
