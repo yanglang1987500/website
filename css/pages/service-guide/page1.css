@@ -8,6 +8,7 @@
 .service-guide-page1 .artical {
     padding:20px 5%;
     box-shadow: 0 0 15px rgba(0,0,0,.4);
+    filter: progid:DXImageTransform.Microsoft.Shadow( color='#8B8B8B', Direction=145, Strength=3 );
 }
 
 .service-guide-page1 h1 {

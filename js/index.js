@@ -68,6 +68,16 @@ function subscriEvents(){
     Events.subscribe('render-container',function(data){
         $container.html(data);
         Events.notify('init-slide-ppt');
+        if($.browser.msie && $.browser.version == '8.0')
+            Events.notify('render-table-even');
+    });
+
+
+    /**
+     * 渲染表格的奇偶样式
+     */
+    Events.subscribe('render-table-even',function(){
+        $('.ui-table tr:even').addClass('even');
     });
 
 
@@ -80,8 +90,8 @@ function subscriEvents(){
      */
     var $notice = $('.ui-notice');
     Events.subscribe('open-notice',function(title,content,href){
-        $('.l-m p',$notice).html(content);
-        $('.l-m h2',$notice).html(title);
+        $('#notice-title',$notice).html(title);
+        $('#notice-content',$notice).html(content);
         $('.notice-detail',$notice).attr('href',href);
         $('.ui-notice').fadeIn(200);
     }).subscribe('close-notice',function(){
@@ -91,6 +101,8 @@ function subscriEvents(){
     $notice.on('click','.close-btn',function(){
        Events.notify('close-notice');
     });
+
+
 }
 
 /**
