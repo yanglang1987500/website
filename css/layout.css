@@ -195,7 +195,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 /*================================左侧选择栏================================*/
 .left-bar{font-size:16px;padding-top:40px;}
 .left-bar h3{font-size:16px;color:#fff;margin:8px 0;height:30px;background:#0154A4;text-align:center;line-height:30px;}
-.left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-weight:600;font-size:15px}
+.left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-size:15px}
 .left-bar ul li{padding:0 20px;position:relative;margin:8px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer;}
 .left-bar ul li>p{display:block;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .left-bar ul li:hover,.trade-info-page2 .left-bar ul li.actived{background:#F90}

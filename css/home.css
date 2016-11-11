@@ -35,6 +35,7 @@
 .side-bar-container ul li:first-child+li+li+li+li+li+li+li{background-image:url(../images/sidebar/C11a.png);}
 .side-bar-container ul li:first-child+li+li+li+li+li+li+li:hover{background-image:url(../images/sidebar/C11b.png);}
 .no-icon.link-block{padding:0;background-image:url(../images/sidebar/C12a.png);width:175px;color:#004787;font-size:16px;font-weight:600;height:41px;line-height:41px;text-align:center}
+.no-icon.link-block:hover{background-image:url(../images/sidebar/C12b.png);color:#fff;}
 .img-container{text-align:center;padding:20px}
 
 
