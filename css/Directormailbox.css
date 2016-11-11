@@ -1,0 +1,142 @@
+.main-contents {
+    position: relative;
+    width: 1000px;
+    background-color: #ffffff;
+    margin-top: -153px;
+    z-index: 10;
+    overflow: hidden;
+    margin-left: 220px;
+}
+.left-image {
+    float: left;
+}
+.right-contents {
+    float: right;
+    width: 759px;
+    height: 781px;
+    position: relative;
+    /* top: -783px; */
+    background-color: #E2F3FF;
+}
+.tip-content {
+    position: relative;
+    top: -103px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.tip-content span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #0154A4;
+}
+.tip-content p{
+	color: #0154A4;
+	font-size: 16px;
+	line-height: 30px;
+}
+.middle-form {
+    position: relative;
+    top: -100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-title {
+    font-size: 18px;
+    color: #0154A4;
+    float: left;
+    line-height: 21px;
+    width: 80px;
+    margin-right: 5px;
+}
+span.mail-contents {
+    font-size: 18px;
+    color: #0154A4;
+    line-height: 100px;
+    vertical-align: center;
+}
+.form-line{
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.form-input {
+    float: left;
+}
+.form-title2 {
+    font-size: 18px;
+    color: #0154A4;
+    float: right;
+    line-height: 21px;
+    width: 80px;
+    margin-right: 5px;
+}
+.form-input-textarea{
+
+	width: 629px;
+    height: 101px;
+}
+.form-input2 {
+    float: right;
+}
+.form-submit {
+    position: relative;
+    left: -58px;
+    top: -10px;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.table-contents table {
+     position: relative; 
+    top: 0px; 
+    margin-left: 6px;
+    width: 700px;
+}
+.table-contents table td {
+    padding: 13px;
+    font-size: 15px;
+    background-color: #CCECFF;
+    color: #0154A4;
+}
+#submit-content {
+	font-weight: bold;
+	color: #FFFFFF;
+    position: relative;
+    left: 300px;
+    top: -10px;
+}
+.page-navigator {
+     margin-left: 0px; 
+    font-size: 18px;
+    color: #0154A4;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.mail-div{
+    margin: 20px;
+    width: 66px;
+
+}
+.table-contents {
+    position: relative;
+    top: -50px;
+    margin-left: 20px;
+}
+.table-contents table tr.even td, table tr:nth-child(even) td {
+    background-color: #E2F3FF;
+}
+.table-contents table th {
+    /* background-color: #0154A4; */
+    background-color: #4088C2;
+}
+.page-navigator {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #0154A4;
+    font-weight: bold;
+    margin-bottom: 46px;
+}
+.page-navigator span {
+    margin-right: 35px;
+}
