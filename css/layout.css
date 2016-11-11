@@ -129,7 +129,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================搜索条样式================================*/
 .search-bar{height:30px;width:338px;background-image:url(../images/head_search_bar.png)}
-.search-bar>input{color: #8c8c8c;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:275px}
+.search-bar>input{color: #8c8c8c;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:16px;top:2px;width:275px}
 .search-bar>input:focus+ul{display:block}
 .search-bar-btn{display:block;width:48px;height:30px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar-btn:hover{background-image: url(../images/head_search_bar_btn_hover.png);background-repeat:no-repeat}
@@ -140,7 +140,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================搜索条样式2================================*/
 .search-bar2{height:31px;width:434px;position: relative;background-image:url(../images/search_bar.png)}
-.search-bar2>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar2>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:16px;top:2px;width:365px}
 .search-bar2>input:focus+ul{display:block}
 .search-bar2-btn{display:block;width:50px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar2-btn:hover{background-image: url(../images/search_bar_btn_hover.png);background-repeat:no-repeat}
@@ -152,7 +152,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================搜索条样式3================================*/
 .search-bar3{height:31px;width:316px;position: relative;background-image:url(../images/search_bar2.png)}
-.search-bar3>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar3>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:16px;top:2px;width:250px}
 .search-bar3>input:focus+ul{display:block}
 .search-bar3-btn{display:block;width:48px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar3-btn:hover{background-image: url(../images/search_bar2_btn_hover.png);background-repeat:no-repeat}
@@ -164,7 +164,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================搜索条样式4================================*/
 .search-bar4{height:31px;width:435px;position: relative;background-image:url(../images/search_bar3.png)}
-.search-bar4>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:10px;top:2px;width:365px}
+.search-bar4>input{color: #6b98ba;font-size:14px;height:26px;line-height:28px;padding:0;border:0;outline:0;position:absolute;background:0 0;left:16px;top:2px;width:365px}
 .search-bar4>input:focus+ul{display:block}
 .search-bar4-btn{display:block;width:41px;height:31px;position:absolute;right:0;top:0;cursor:pointer}
 .search-bar4-btn:hover{background-image: url(../images/search_bar3_btn_hover.png);background-repeat:no-repeat}
