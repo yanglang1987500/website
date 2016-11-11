@@ -2,7 +2,7 @@
     padding-top:45px;background-color:#dde6eb;
 }
 .market-honesty-page1 .artical-wrap {
-    background: #fff
+    background: #fff;
 }
 .market-honesty-page1 .head{
     height:61px;
@@ -48,3 +48,22 @@
     width:130px;
     float:right;
 }
+.market-honesty-page1 .ui-table table{
+    margin:0;
+    position: static;
+}
+.market-honesty-page1 .ui-table th{
+    background-color: #4088C2;
+    height:50px;
+}
+.market-honesty-page1 .ui-table th:first-child{
+    text-align: center;
+}
+.market-honesty-page1 .ui-table table td{
+    text-align: left;
+}
+.market-honesty-page1 .ui-table table td:first-child{
+    text-align: center;
+}
+
+

@@ -31,7 +31,7 @@ and (min-width : 1400px) {
         background-image: url(../images/head-navi-bg/1200/navi_bg.png);
     }
     .head-navi>li{
-        width: 195.67px !important;
+        width: 195.6px !important;
     }
     .head-navi>li:first-child:hover,.head-navi>li:first-child.actived{background-image: url(../images/head-navi-bg/1200/B1.png);}
     .head-navi>li:first-child+li:hover,.head-navi>li:first-child+li.actived{background-image: url(../images/head-navi-bg/1200/B2.png);}
@@ -218,3 +218,11 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .page-navigator span{margin-right:40px}
 .page-navigator span a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
 .page-navigator ul li a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
+
+
+
+/*================================page内table样式================================*/
+.ui-table table{position:relative;top:-90px;margin-left:265px;width:100%;}
+.ui-table table th{background-color:#0154A4;height:52px;line-height:52px;color:#fff;font-size:18px;text-align:left;font-weight:400}
+.ui-table table td{height:35px;font-size:15px;background-color:#FFFFFF;line-height: 35px}
+.ui-table table tr:nth-child(even)>td{background-color:#E7F0F5}

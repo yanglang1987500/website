@@ -288,6 +288,13 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
     background-position: left center;
     text-align: left;
 }
+.home-footer .top-arrow {
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 8px;
+}
 .home-footer .hf-icon1 {
     background-image: url(../images/home-main/1.png);
 }
@@ -335,7 +342,7 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
     list-style: none;
     text-align: justify;
     margin-top:-15px;
-    font-size: 0;
+    font-size: 1px;
 }
 .home-footer-list .sub-menu{
     display: none;
