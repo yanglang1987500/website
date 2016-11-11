@@ -1,0 +1,60 @@
+.msg-center-page1 {
+    padding-top:45px;background-color:#dde6eb;
+}
+.msg-center-page1 .artical-wrap {
+    background: #fff
+}
+
+.msg-center-page1 .left-bar {
+    float:left;
+    background: #85C1E3;
+    width:240px;
+    height:465px;
+    background-image: url(../../../images/msg-center/img1.png);
+}
+.msg-center-page1 .right-content-wrap {
+    overflow: hidden;
+    height:465px;
+}
+.msg-center-page1 .head {
+    
+}
+.msg-center-page1  .search-bar2{
+    margin:15px auto;
+}
+
+
+
+
+.msg-center-page1 .head{
+    height:70px;
+    line-height:70px;
+    text-align: center;
+    color:#00478A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.msg-center-page1 .head .right-index{
+    width:80px;
+    float:left;
+}
+.msg-center-page1 .head .right-title {
+    width:90px;
+    float:left;
+    text-align: left;
+}
+.msg-center-page1 .head .search-bar2 {
+    float:left;
+    margin-top:20px;
+    font-weight: 500;
+}
+.msg-center-page1 .head .publish-time {
+    width:140px;
+    float:right;
+}
+
+.msg-center-page1 .ui-table th{
+    height:0;
+}
+.msg-center-page1  .ui-table table td{height:40px;font-size:15px;background-color:#FFFFFF;line-height: 40px;color:#00478A;}

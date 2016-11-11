@@ -42,26 +42,10 @@
     background: #85C1E3;
     width:200px;
     height:470px;
+    padding-top:5px;
 }
 .trade-info-page2 .right-content-wrap {
     overflow: hidden;
     padding:10px 0;
     height:470px;
-}
-.trade-info-page2 .left-bar ul{
-    list-style: none;
-    color:#fff;
-    font-size:16px;
-    font-weight: 600;
-    text-align: center;
-}
-.trade-info-page2 .left-bar ul li{
-    height:30px;
-    line-height: 30px;
-    background: #4F96CC;
-    margin:10px 0;
-    cursor: pointer;
-}
-.trade-info-page2 .left-bar ul li:hover,.trade-info-page2 .left-bar ul li:active{
-    background:#FF9900;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .lt-wrap{width: 1024px;}
 .head-navi{
     background-image: url(../images/head-navi-bg/1024/navi_bg.png);
@@ -191,8 +192,11 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 
 /*================================左侧选择栏================================*/
-.left-bar ul{margin:15px 0;color:#fff;list-style:none;text-align:center;font-weight:600;font-size:15px}
-.left-bar ul li{position:relative;margin:10px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer}
+.left-bar{font-size:16px;padding-top:40px;}
+.left-bar h3{font-size:16px;color:#fff;margin:8px 0;height:30px;background:#0154A4;text-align:center;line-height:30px;}
+.left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-weight:600;font-size:15px}
+.left-bar ul li{padding:0 20px;display:block;width:200px;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+    position:relative;margin:8px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer;}
 .left-bar ul li:hover,.trade-info-page2 .left-bar ul li.actived{background:#F90}
 .left-bar ul li:hover:after,.trade-info-page2 .left-bar ul li.actived:after{position:absolute;top:0;right:-15px;width:15px;height:30px;background-image:url(../images/left-arrow.png);background-repeat:no-repeat;content:''}
 
@@ -200,10 +204,10 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 /*================================右侧数据（类似目录-----效果的列表 使用ul列表模拟表格）================================*/
 .index-list{color:#00478A;list-style:none;font-weight:500;font-size:16px;}
-.index-list li{height:40px;text-align:center;line-height:40px;}
+.index-list li{height:38px;text-align:center;line-height:38px;}
 .index-list li .index-list-index{float:left;width:75px;}
 .index-list li .index-list-content{float:left;width:74%;background-image:url(../images/index_list_dot.jpg);background-position:center center;background-repeat:repeat-x;text-align:left;}
-.index-list li .index-list-content p{float:left;overflow:hidden;padding-right:5px;height:40px;max-width:100%;background:#fff;}
+.index-list li .index-list-content p{float:left;overflow:hidden;padding-right:5px;height:38px;max-width:100%;background:#fff;}
 .index-list li .index-list-date{float:right;width:125px;}
 
 
@@ -211,11 +215,11 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .table-contents table{position:relative;top:-90px;margin-left:265px;width:700px}
 .table-contents table th{background-color:#0154A4;padding:10px;color:#fff;font-size:18px;text-align:left;font-weight:400}
 .table-contents table td{padding:13px;font-size:15px;background-color:#CCECFF}
-.table-contents table tr.even td,table tr:nth-child(even) td{background-color:#CCECFF}
+.table-contents table tr.even td,.table-contents  table tr:nth-child(even) td{background-color:#CCECFF}
 
 /*================================分页导航条样式================================*/
-.page-navigator{margin-left:140px;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:40px}
-.page-navigator span{margin-right:40px}
+.page-navigator{text-align:center;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:40px}
+.page-navigator span{margin-right:30px}
 .page-navigator span a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
 .page-navigator ul li a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
 
@@ -226,3 +230,10 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .ui-table table th{background-color:#0154A4;height:52px;line-height:52px;color:#fff;font-size:18px;text-align:left;font-weight:400}
 .ui-table table td{height:35px;font-size:15px;background-color:#FFFFFF;line-height: 35px}
 .ui-table table tr:nth-child(even)>td{background-color:#E7F0F5}
+.ui-table table td:first-child{text-align: center;}
+
+
+/*================================page内table样式2================================*/
+.ui-table2 table{position:relative;width:100%;}
+.ui-table2 table th{background-color:#E7F0F5;height:55px;line-height:55px;border:1px solid #AEB9BE;color:#2D3B42;font-size:16px;text-align:center;font-weight:600}
+.ui-table2 table td{font-size:14px;background-color:#FFFFFF;line-height: 1.5;border:1px solid #AEB9BE;text-align: center;font-size:16px;vertical-align: middle;padding:0 10px;}
