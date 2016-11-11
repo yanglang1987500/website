@@ -195,8 +195,8 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .left-bar{font-size:16px;padding-top:40px;}
 .left-bar h3{font-size:16px;color:#fff;margin:8px 0;height:30px;background:#0154A4;text-align:center;line-height:30px;}
 .left-bar ul{margin:5px 0;color:#fff;list-style:none;text-align:center;font-weight:600;font-size:15px}
-.left-bar ul li{padding:0 20px;display:block;width:200px;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
-    position:relative;margin:8px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer;}
+.left-bar ul li{padding:0 20px;position:relative;margin:8px 0;height:30px;background:#4F96CC;line-height:30px;cursor:pointer;}
+.left-bar ul li>p{display:block;word-break:keep-all;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .left-bar ul li:hover,.trade-info-page2 .left-bar ul li.actived{background:#F90}
 .left-bar ul li:hover:after,.trade-info-page2 .left-bar ul li.actived:after{position:absolute;top:0;right:-15px;width:15px;height:30px;background-image:url(../images/left-arrow.png);background-repeat:no-repeat;content:''}
 
@@ -226,7 +226,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 
 
 /*================================page内table样式================================*/
-.ui-table table{position:relative;width:100%;}
+.ui-table table{position:relative;width:100%;color:#256DB2;}
 .ui-table table th{background-color:#0154A4;height:52px;line-height:52px;color:#fff;font-size:18px;text-align:left;font-weight:400}
 .ui-table table td{height:35px;font-size:15px;background-color:#FFFFFF;line-height: 35px}
 .ui-table table tr:nth-child(even)>td{background-color:#E7F0F5}
@@ -237,3 +237,62 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .ui-table2 table{position:relative;width:100%;}
 .ui-table2 table th{background-color:#E7F0F5;height:55px;line-height:55px;border:1px solid #AEB9BE;color:#2D3B42;font-size:16px;text-align:center;font-weight:600}
 .ui-table2 table td{font-size:14px;background-color:#FFFFFF;line-height: 1.5;border:1px solid #AEB9BE;text-align: center;font-size:16px;vertical-align: middle;padding:0 10px;}
+
+
+/*================================公告样式================================*/
+.ui-notice{
+    display: none;
+    width:405px;
+    height:284px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top:-140px;
+    margin-left:-203px;
+    z-index: 999999;
+    color:#fff;
+    text-align: center;
+    background-image: url(../images/home-main/notice_bg.png);
+}
+
+.ui-notice .l-m{
+    padding: 30px 50px;
+}
+
+.ui-notice .close-btn,.ui-notice .expand-btn{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.ui-notice .close-btn {
+    right: 56px;
+    top: 26px;
+    width:25px;
+    height:26px;
+    background-image: url(../images/home-main/close_btn.png);
+}
+.ui-notice .expand-btn {
+    right: 53px;
+    bottom: 65px;
+    width:62px;
+    height:28px;
+    background-image: url(../images/home-main/expand_btn.png);
+    line-height: 28px;
+    font-size:16px;
+    color:#184DA1;
+    font-weight:600;
+}
+.ui-notice h2{
+    font-size:34px;
+    line-height: 50px;
+    margin-bottom:20px;
+}
+.ui-notice p{
+    font-size:16px;
+    line-height: 1.8;
+    text-align: left;
+    text-indent: 32px;
+}
+
+
+

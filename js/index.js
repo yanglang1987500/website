@@ -11,6 +11,11 @@ $(function(){
     $container = $('#mainContainer');
 
     Events.notify('menu-panel-toggle','home');
+
+    //延迟两秒打开公告面板
+    setTimeout(function(){
+        Events.notify('open-notice','重要公告','为贯彻落实《国务院关于积极推进“互联网+”行动的指导意见》《国务院关于加快推……','http://www.baidu.com');
+    },2000);
 });
 
 /**
@@ -63,6 +68,28 @@ function subscriEvents(){
     Events.subscribe('render-container',function(data){
         $container.html(data);
         Events.notify('init-slide-ppt');
+    });
+
+
+    /**
+     * 订阅打开与关闭公告面板事件
+     * 三个参数
+     * title 公告标题
+     * content 公告内容
+     * href 详情链接
+     */
+    var $notice = $('.ui-notice');
+    Events.subscribe('open-notice',function(title,content,href){
+        $('.l-m p',$notice).html(content);
+        $('.l-m h2',$notice).html(title);
+        $('.notice-detail',$notice).attr('href',href);
+        $('.ui-notice').fadeIn(200);
+    }).subscribe('close-notice',function(){
+        $notice.fadeOut(200);
+    });
+
+    $notice.on('click','.close-btn',function(){
+       Events.notify('close-notice');
     });
 }
 
