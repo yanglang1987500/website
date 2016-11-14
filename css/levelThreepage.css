@@ -31,6 +31,7 @@
     height: 33px;
     background-image: url(../images/otherpages/print.png);
 }
+
 .print a{
     margin-left: 55px;
     text-decoration: none;
@@ -130,7 +131,7 @@ p.text-line-text {
 }
 .bottom-button{
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 span a{
     color: #ffffff;
