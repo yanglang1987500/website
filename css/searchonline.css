@@ -17,13 +17,13 @@
     position: relative;
     width: 1000px;
     background-color: #ffffff;
-    margin-top: -153px;
+    margin-top: -139px;
     z-index: 10;
     margin-left: 220px;
 }
 .search-div{
     background-color:#CCECFF;
-    height: 154px;
+    height: 140px;
 }
 .search-bar2 {
     height: 31px;
@@ -119,7 +119,7 @@
     font-weight: bold;
 }
 .breadcrumbs {
-    margin: 25px 95px;
+    margin: 45px 95px;
     position: relative;
     padding-left: 100px;
     list-style: none;

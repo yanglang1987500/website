@@ -2,13 +2,14 @@
     position: relative;
     width: 1000px;
     background-color: #ffffff;
-    margin-top: -153px;
+    margin-top: -139px;
     z-index: 10;
     overflow: hidden;
     margin-left: 220px;
 }
 .left-image {
     float: left;
+    height: 781px;
 }
 .right-contents {
     float: right;
@@ -93,8 +94,24 @@ span.mail-contents {
     margin-left: 6px;
     width: 700px;
 }
+#table-number{
+    text-align: center;
+}
+.table-number{
+    text-align: center;
+}
+.table-contents table th{
+    background-color: #4088C2;
+    padding: 0px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+}
 .table-contents table td {
-    padding: 13px;
+    padding: 0px;
+    line-height: 35px;
     font-size: 15px;
     background-color: #CCECFF;
     color: #0154A4;

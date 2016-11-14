@@ -12,7 +12,7 @@
 }
 .breadcrumbs {
     float: left;
-    margin: 25px 0;
+    margin: 35px 0;
     position: relative;
     padding-left: 100px;
     list-style: none;
@@ -20,7 +20,7 @@
     color: #004689;
 }
 .right-button {
-    padding-top: 22px;
+    padding-top: 30px;
     font-size: 18px;
     color: #0154A4;
 }
@@ -78,6 +78,7 @@
     line-height: 30px;
 }
 .main-content{
+    margin-top: -20px;
     margin-bottom: 20px;
     padding:25px;
     background: #fff;
