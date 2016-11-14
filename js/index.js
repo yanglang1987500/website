@@ -30,17 +30,15 @@ function subscriEvents(){
             if(dataId == 'home'){
                 //如果点击的是【首页】 加载首页片段
                 Events.notify('fetch-fragment',homePage,function(data){
-                    Events.notify('render-container',data);
+                    Events.notify('render-container',data,true);
                 });
                 $menuPanel.hide();//隐藏菜单面板
                 $slidePanel.show();//显示滚动PPT面板
-                $('.home-footer').show();//首页的页脚写在index.html中了，如果写在home.html里的话布局上不太好实现。
                 $('.head-shadow').addClass('actived');//切换菜单面板上方的阴影颜色
             }else{
                 $menuPanel.show();//显示菜单面板
                 $slidePanel.hide();//隐藏滚动PPT面板
                 $('.menu-panel-list').hide();//隐藏所有菜单
-                $('.home-footer').hide();//隐藏首页的页脚
                 $('#'+dataId,$menuPanel).show();//显示当前导航对应的菜单列表
                 $headShadow.removeClass('actived');//切换菜单面板上方的阴影颜色
                 //  激活当前菜单面板下第一个菜单
@@ -67,13 +65,11 @@ function subscriEvents(){
         if(activedMenuId == 'home'){
             $menuPanel.hide();//隐藏菜单面板
             $slidePanel.show();//显示滚动PPT面板
-            $('.home-footer').show();//显示首页的页脚
             $('.head-shadow').addClass('actived');//切换菜单面板上方的阴影颜色
         }else{
             $menuPanel.show();//显示菜单面板
             $slidePanel.hide();//隐藏滚动PPT面板
             $('.menu-panel-list').hide();//隐藏所有菜单
-            $('.home-footer').hide();//隐藏首页的页脚
             $('#'+activedMenuId,$menuPanel).show();
             $('.head-shadow').removeClass('actived');//切换菜单面板上方的阴影颜色
         }
@@ -101,8 +97,10 @@ function subscriEvents(){
     /**
      * 渲染主区域内容
      */
-    Events.subscribe('render-container',function(data){
+    Events.subscribe('render-container',function(data,isHome){
+        debugger;
         $container.html(data);
+        isHome?($('.home-footer').show()):($('.home-footer').hide());//首页的页脚写在index.html中了，如果写在home.html里的话布局上不太好实现。
         Events.notify('init-slide-ppt');
         if($.browser.msie && $.browser.version == '8.0')
             Events.notify('render-table-even');

@@ -15,6 +15,7 @@
 .info-public-page2 .right-content-wrap {
     overflow: hidden;
     height:465px;
+    position: relative;
 }
 .info-public-page2 .head {
     
@@ -58,3 +59,10 @@
     height:0;
 }
 .info-public-page2  .ui-table table td{height:40px;font-size:15px;background-color:#FFFFFF;line-height: 40px;color:#00478A;}
+
+.info-public-page2 .page-navigator{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+}

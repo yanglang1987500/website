@@ -225,7 +225,7 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .table-contents table tr.even td,.table-contents  table tr:nth-child(even) td{background-color:#CCECFF}
 
 /*================================分页导航条样式================================*/
-.page-navigator{text-align:center;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:40px}
+.page-navigator{text-align:center;font-size:18px;color:#0154A4;font-weight:700;margin-bottom:25px}
 .page-navigator span{margin-right:30px}
 .page-navigator span a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}
 .page-navigator ul li a{text-decoration:none;font-size:18px;color:#0154A4;font-weight:700}

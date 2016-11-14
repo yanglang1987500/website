@@ -48,4 +48,13 @@
     overflow: hidden;
     padding:10px 0;
     height:470px;
+    position: relative;
+}
+
+
+.trade-info-page2 .page-navigator{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
 }

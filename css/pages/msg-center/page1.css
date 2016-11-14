@@ -15,6 +15,7 @@
 .msg-center-page1 .right-content-wrap {
     overflow: hidden;
     height:465px;
+    position: relative;
 }
 .msg-center-page1 .head {
     
@@ -58,3 +59,10 @@
     height:0;
 }
 .msg-center-page1  .ui-table table td{height:40px;font-size:15px;background-color:#FFFFFF;line-height: 40px;color:#00478A;}
+
+.msg-center-page1 .page-navigator{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+}
