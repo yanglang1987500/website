@@ -10,7 +10,7 @@ $(function(){
     bindEvents();
     $container = $('#mainContainer');
 
-    Events.notify('menu-panel-toggle','home');
+    Events.notify('menu-panel-in','home',true);
 
     //延迟两秒打开公告面板
     setTimeout(function(){
@@ -22,13 +22,47 @@ $(function(){
  * 订阅事件
  */
 function subscriEvents(){
-    var $menuPanel = $('#menuPanel'),$slidePanel = $('#slidePanel');
+    var $menuPanel = $('#menuPanel'),$slidePanel = $('#slidePanel'),activedMenuId = '',$headShadow =$('.head-shadow');
     //菜单面板切换
-    Events.subscribe('menu-panel-toggle',function(dataId){
-        if(dataId == 'home'){
-            Events.notify('fetch-fragment',homePage,function(data){
-                Events.notify('render-container',data);
-            });
+    Events.subscribe('menu-panel-in',function(dataId,isClick){
+        if(isClick){
+            //如果是点击事件
+            if(dataId == 'home'){
+                Events.notify('fetch-fragment',homePage,function(data){
+                    Events.notify('render-container',data);
+                });
+                $menuPanel.hide();
+                $slidePanel.show();
+                $('.home-footer').show();
+                $('.head-shadow').addClass('actived');
+            }else{
+                $menuPanel.show();
+                $slidePanel.hide();
+                $('.menu-panel-list').hide();
+                $('.home-footer').hide();
+                $('#'+dataId,$menuPanel).show();
+                $headShadow.removeClass('actived');
+                // TODO 激活当前菜单面板下第一个菜单
+                $('#'+dataId+'>li',$menuPanel).eq(0).click();
+            }
+            activedMenuId = dataId;//记录当前激活菜单
+        }else{
+            //如是鼠标移入事件
+            if(dataId == 'home'){
+                $menuPanel.hide();
+                $slidePanel.show();
+                $('.head-shadow').addClass('actived');
+            }else{
+                $menuPanel.show();
+                $slidePanel.hide();
+                $('.menu-panel-list').hide();
+                $('#'+dataId,$menuPanel).show();
+                $headShadow.removeClass('actived');
+            }
+        }
+
+    }).subscribe('menu-panel-out',function(dataId){
+        if(activedMenuId == 'home'){
             $menuPanel.hide();
             $slidePanel.show();
             $('.home-footer').show();
@@ -38,7 +72,7 @@ function subscriEvents(){
             $slidePanel.hide();
             $('.menu-panel-list').hide();
             $('.home-footer').hide();
-            $('#'+dataId,$menuPanel).show();
+            $('#'+activedMenuId,$menuPanel).show();
             $('.head-shadow').removeClass('actived');
         }
     });
@@ -113,8 +147,20 @@ function bindEvents(){
     $('.head-navi').on('click','li',function(){
         var $this = $(this);
         var dataId = $this.attr('data-id');
+        $('.menu-panel li').removeClass('actived');
         $this.parent().find('li').removeClass('actived').end().end().addClass('actived');
-        Events.notify('menu-panel-toggle',dataId);
+        Events.notify('menu-panel-in',dataId,true);
+    }).on('mouseenter','li',function(){
+        var $this = $(this);
+        var dataId = $this.attr('data-id');
+        Events.notify('menu-panel-in',dataId,false);
+    }).on('mouseout','li',function(e){
+        var $this = $(this);
+        var dataId = $this.attr('data-id');
+        if(e.clientY>296){
+            Events.notify('menu-panel-out',dataId);
+
+        }
     });
 
     //菜单面板点击事件
@@ -122,7 +168,8 @@ function bindEvents(){
         var $this = $(this);
         if($this.hasClass('more')||$this.hasClass('more-two'))
             return;
-        $('.more li,.more-two li').removeClass('actived');
+        $('.menu-panel li').removeClass('actived');
+        $('.more li,.more-two li',$this.parent()).removeClass('actived');
         if($this.next().hasClass('more') || $this.next().hasClass('more-two')){
             $this.next().find('ul>li').removeClass('actived').eq(0).addClass('actived');
         }
@@ -132,11 +179,16 @@ function bindEvents(){
         Events.notify('fetch-fragment',module,function(data){
             Events.notify('render-container',data);
         });
+
+        var pId = $this.parent().attr('id');
+        $(".head-navi>li").removeClass('actived');
+        $(".head-navi>li[data-id='"+pId+"']").addClass('actived');
     });
 
     //菜单面板二级菜单点击事件
     $('#menuPanel').on('click','.more>ul li',function(){
         var $this = $(this);
+        $('.menu-panel li').removeClass('actived');
         $('li',$this.parent().parent().parent()).removeClass('actived');
         $this.parent().parent().prev().addClass('actived');
         $this.addClass('actived');
@@ -144,6 +196,11 @@ function bindEvents(){
         Events.notify('fetch-fragment',module,function(data){
             Events.notify('render-container',data);
         });
+
+
+        var pId = $this.parent().parent().parent().attr('id');
+        $(".head-navi>li").removeClass('actived');
+        $(".head-navi>li[data-id='"+pId+"']").addClass('actived');
     }).on('mouseenter','.more>ul li',function(){
         var $this = $(this);
         $this.parent().parent().prev().addClass('actived');
@@ -159,13 +216,18 @@ function bindEvents(){
         !hasActived && ($this.parent().parent().prev().removeClass('actived'));
     }).on('click','.more-two>ul li',function(){
         var $this = $(this);
+        $('.menu-panel li').removeClass('actived');
         $('li',$this.parent().parent().parent()).removeClass('actived');
+
         $this.parent().parent().prev().addClass('actived');
         $this.addClass('actived');
         var module = $this.attr('data-module');
         Events.notify('fetch-fragment',module,function(data){
             Events.notify('render-container',data);
         });
+        var pId = $this.parent().parent().parent().attr('id');
+        $(".head-navi>li").removeClass('actived');
+        $(".head-navi>li[data-id='"+pId+"']").addClass('actived');
     }).on('mouseenter','.more-two>ul li',function(){
         var $this = $(this);
         $this.parent().parent().prev().addClass('actived');

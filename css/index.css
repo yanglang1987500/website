@@ -248,6 +248,7 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
 .head-navi>li:first-child+li+li+li+li+li{line-height:88px}
 
 
+
 #mainContainer{padding-top:15px;background:#fff;position:relative;z-index:1}
 #mainContainer:after{content:'';position:absolute;left:0;top:0;height:100%;width:100%;background:#fff;z-index:-2}
 
