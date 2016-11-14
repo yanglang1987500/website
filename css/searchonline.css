@@ -139,11 +139,11 @@
     color: #1363AD;
     padding: 10px;
 }
-.table-content table tr:nth-child(even) td  {
-    background-color: #E8F5FF;
-
-}
 .table-content table td:nth-child(3) {
     background-color: #CCE9FF;
+
+}
+.table-content table tr:nth-child(even) td  {
+    background-color: #E8F5FF;
 
 }

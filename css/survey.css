@@ -3,26 +3,36 @@
     position: relative;
     width: 1000px;
     background-color: #CCECFF;
-    margin-top: -140px;
+    top: -140px;
     z-index: 10;
-    margin-left: 220px;
-   
+    margin: 0 auto;
+   overflow: hidden;
 }
-.right-contents{
-    top: -100px;
+.lt-main-container{
+    height: 476px;
+}
+.left-image{ 
+    width: 242px;
+    height: 616px;
+    float: left;
+    background-image: url(../images/otherpages/survey-image.png);
+}
+.right-contents {
+    float: right;
+    height: 616px;
+    width: 758px;
 }
 
 .search-div {
     background-color: #CCECFF;
-    height: 153px;
-    margin-top: -436px;
+    height: 105px;
+    margin: 0 auto;
 }
 .search-bar2 {
     height: 31px;
     width: 434px;
     position: relative;
     /* margin: 0 auto; */
-    margin-left: 400px;
     top: 40px;
     background-image: url(../images/search_bar.png);
 }
@@ -43,15 +53,13 @@
     text-align: left;
 }
 .table-contents {
-    position: relative;
-    top: 40px;
-    height: 263px;
+    margin-bottom: 30px
 }
 
 .table-contents table {
     position: relative;
-    top: -90px;
-    margin-left: 265px;
+    top: 0px;
+    margin: 0 auto;
     width: 700px;
     color: #0154A4;
 }
@@ -84,9 +92,9 @@ table tr:nth-child(even) td ,table tr.even td  {
     margin-right: 30px;
 }
 .page-navigator {
-    margin-left: 280px;
-    position: relative;
-    top: -30px;
+    margin: 0 auto;
+   
+   
     font-size: 18px;
     color: #0154A4;
     font-weight: bold;
