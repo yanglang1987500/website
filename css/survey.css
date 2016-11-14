@@ -78,24 +78,21 @@ td {
     font-size: 15px;
     background-color:  #CCECFF;
 }
-#table-number{
+.table-number{
     text-align: center;
 }
 table tr:nth-child(even) td ,table tr.even td  {
     background-color:   #CCECFF;
 
 }
-
-
-
 .page-navigator span {
     margin-right: 30px;
 }
 .page-navigator {
-    margin: 0 auto;
-   
-   
+    position: absolute;
+    top: 560px;
     font-size: 18px;
+    margin-left: 40px;
     color: #0154A4;
     font-weight: bold;
     margin-bottom: 0px;

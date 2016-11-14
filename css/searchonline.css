@@ -13,13 +13,16 @@
     background-image:url(../images/head_bg.jpg) ;
     background-repeat: repeat-x;
 }
+.lt-main-container {
+    height: auto;
+}
 .main-contents{
     position: relative;
     width: 1000px;
     background-color: #ffffff;
-    margin-top: -139px;
     z-index: 10;
-    margin-left: 220px;
+    margin: 0 auto;
+    margin-top: -139px;
 }
 .search-div{
     background-color:#CCECFF;
@@ -94,7 +97,7 @@
     margin-left: 10px;
 }
 .page-navigator{
-    margin-left: 140px;
+    margin: 0 auto;
     font-size: 18px;
     color: #0154A4;
     font-weight: bold;

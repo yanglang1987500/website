@@ -2,10 +2,10 @@
     position: relative;
     width: 1000px;
     background-color: #ffffff;
-    margin-top: -139px;
+    
     z-index: 10;
     overflow: hidden;
-    margin-left: 220px;
+
 }
 .left-image {
     float: left;
@@ -24,6 +24,7 @@
     top: -103px;
     margin-left: 100px;
     margin-right: 20px;
+    margin-bottom: 45px;
 }
 .tip-content span{
 	font-size: 18px;
@@ -123,13 +124,7 @@ span.mail-contents {
     left: 300px;
     top: -10px;
 }
-.page-navigator {
-     margin-left: 0px; 
-    font-size: 18px;
-    color: #0154A4;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
+
 .mail-div{
     margin: 20px;
     width: 66px;
@@ -148,7 +143,9 @@ span.mail-contents {
     background-color: #4088C2;
 }
 .page-navigator {
-    margin-left: 20px;
+    position: absolute;
+    top: 730px;
+    margin-left: 25px;
     font-size: 18px;
     color: #0154A4;
     font-weight: bold;
