@@ -14,7 +14,7 @@
 
 .search-div {
     background-color: #CCECFF;
-    height: 154px;
+    height: 153px;
     margin-top: -436px;
 }
 .search-bar2 {
@@ -26,7 +26,22 @@
     top: 40px;
     background-image: url(../images/search_bar.png);
 }
-
+.table-contents table th {
+    background-color: #0154A4;
+    padding: 0px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+}
+.table-contents table td {
+    padding: 0px;
+    line-height: 35px;
+    font-size: 15px;
+    background-color: #CCECFF;
+    text-align: left;
+}
 .table-contents {
     position: relative;
     top: 40px;
@@ -55,7 +70,9 @@ td {
     font-size: 15px;
     background-color:  #CCECFF;
 }
-
+#table-number{
+    text-align: center;
+}
 table tr:nth-child(even) td ,table tr.even td  {
     background-color:   #CCECFF;
 
@@ -69,7 +86,7 @@ table tr:nth-child(even) td ,table tr.even td  {
 .page-navigator {
     margin-left: 280px;
     position: relative;
-    top: -20px;
+    top: -30px;
     font-size: 18px;
     color: #0154A4;
     font-weight: bold;
