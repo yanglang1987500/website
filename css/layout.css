@@ -34,6 +34,12 @@ and (min-width : 1400px) {
     .head-navi>li{
         width: 195.6px !important;
     }
+    ul.news-list li>a{
+        width:500px !important;
+    }
+    ul.news-list.title-long li>a{
+        width:800px !important;
+    }
     .head-navi>li:first-child:hover,.head-navi>li:first-child.actived{background-image: url(../images/head-navi-bg/1200/B1.png);}
     .head-navi>li:first-child+li:hover,.head-navi>li:first-child+li.actived{background-image: url(../images/head-navi-bg/1200/B2.png);}
     .head-navi>li:first-child+li+li:hover,.head-navi>li:first-child+li+li.actived{background-image: url(../images/head-navi-bg/1200/B3.png);}
