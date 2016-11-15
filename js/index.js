@@ -85,7 +85,7 @@ function subscriEvents(){
 
     //初始化段内的幻灯牌
     Events.subscribe('init-slide-ppt',function(){
-        $("#fullSlide",$container).slide({
+        $.fn.slide && $("#fullSlide",$container).slide({
             mainCell: ".bd ul",
             autoPlay: true,
             delayTime:1000,
@@ -111,7 +111,10 @@ function subscriEvents(){
      */
     Events.subscribe('render-table-even',function(){
         $('.ui-table tr:even').addClass('even');
+        $('.table-content tr:even').addClass('even');
     });
+    if($.browser.msie && $.browser.version == '8.0')
+        Events.notify('render-table-even');
 
 
     /**
