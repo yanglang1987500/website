@@ -88,13 +88,15 @@
     background-image: url(../../../images/service-guide/tips_bg.png);
     background-repeat: no-repeat;
     font-size: 16px;
-    padding: 30px 40px;
+    padding: 30px 30px;
 }
 .service-guide-page2 .tips p{
-    line-height: 20px;
+    line-height: 25px;
+    padding:0 10px;
     color:#0154A4;
 }
-.service-guide-page2 hr{
-    border-color:#0154A4;
+.service-guide-page2 .tips hr{
+    border-color: #598AB8;
+    margin:10px 0;
 }
 
