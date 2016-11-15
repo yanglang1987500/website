@@ -98,7 +98,6 @@ function subscriEvents(){
      * 渲染主区域内容
      */
     Events.subscribe('render-container',function(data,isHome){
-        debugger;
         $container.html(data);
         isHome?($('.home-footer').show()):($('.home-footer').hide());//首页的页脚写在index.html中了，如果写在home.html里的话布局上不太好实现。
         Events.notify('init-slide-ppt');

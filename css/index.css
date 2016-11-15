@@ -282,7 +282,10 @@ body{background-image:url(../images/lt_bg.jpg);background-repeat:repeat;font-siz
 .home-footer-list{margin-top:-15px;list-style:none;text-align:justify;font-size:0;font-size:1px\9;}
 .home-footer-list .sub-menu{position:absolute;top:12px;left:0;display:none;width:100%;height:160px;background-image:url(../images/home-main/list_bg.jpg);background-repeat:repeat-x;}
 .home-footer-list ul{margin:0 auto;padding:18px 30px;width:1015px;list-style:none;font-size:0;}
-.home-footer-list ul>li{float:left;margin:10px;padding:0 10px;width:193px;height:35px;background-image:url(../images/home-main/link_long_bg.png);color:#2a2a2a;color:#fff;text-align:center;font-size:16px;line-height:35px;}
+.home-footer-list ul>li{word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;float:left;margin:10px;padding:0 10px;width:193px;height:35px;background-image:url(../images/home-main/link_long_bg.png);color:#2a2a2a;color:#fff;text-align:center;font-size:16px;line-height:35px;}
 .home-footer-list ul>li.short{width:155px;background-image:url(../images/home-main/link_short_bg.png);}
 .home-footer-list ul>li:hover{background-image:url(../images/home-main/link_long_bg_hover.png);}
 .home-footer-list ul>li.short:hover{background-image:url(../images/home-main/link_short_bg_hover.png);}
