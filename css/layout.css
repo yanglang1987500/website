@@ -256,4 +256,6 @@ hr{border:0;border-bottom:1px solid #94D8FF}
 .ui-notice .close-btn{top:26px;right:56px;width:25px;height:26px;background-image:url(../images/home-main/close_btn.png);}
 .ui-notice .expand-btn{right:53px;bottom:65px;width:62px;height:28px;color:#184DA1;font-weight:600;font-size:16px;line-height:28px;background-image:url(../images/home-main/expand_btn.png);}
 .ui-notice h2{margin-bottom:20px;font-size:34px;line-height:50px;}
-.ui-notice p{text-align:left;text-indent:32px;font-size:16px;line-height:1.8;}
+.ui-notice p{text-align:left;text-indent:32px;font-size:16px;line-height:1.8;
+    height: 85px;
+    overflow: hidden;}
